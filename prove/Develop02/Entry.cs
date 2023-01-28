@@ -20,8 +20,8 @@ public class Entry {
        "How did the Lord reach you today?",
         };
         Random random = new Random();
-        int randomIndex = random.Next(journalPrompts.Count);
-        userPrompt = journalPrompts[randomIndex];
+        int i = random.Next(journalPrompts.Count);
+        userPrompt = journalPrompts[i];
         Console.WriteLine(userPrompt);
     }
 

@@ -14,13 +14,13 @@ public class Journal
 
     public void DisplayEntries(){
         foreach (Entry entry in userEntries){
-            Console.WriteLine($"\nDate: {entry.userDate} \nPrompt: {entry.userPrompt} \nResponse: {entry.userResponse}\n");
+            Console.WriteLine($"\n    Date: {entry.userDate} \n  Prompt: {entry.userPrompt} \nResponse: {entry.userResponse}\n");
         }
     }
     public void SaveEntries(string userFilename){
         using (StreamWriter outputFile = new StreamWriter(userFilename, true)){
             foreach (Entry entry in userEntries){
-                outputFile.WriteLine($"Date:{entry.userDate}: {entry.userPrompt}\n{entry.userResponse}\n");
+                outputFile.WriteLine($"\n    Date: {entry.userDate} \n  Prompt: {entry.userPrompt} \nResponse: {entry.userResponse}\n");
             }
         }
     }
