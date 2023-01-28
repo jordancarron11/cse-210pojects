@@ -1,4 +1,5 @@
 using System;
+//Only Basic Requirements
 class Program{
     static void Main(string[] args){
         Journal journal = new Journal();

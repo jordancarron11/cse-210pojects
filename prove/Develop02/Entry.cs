@@ -1,5 +1,5 @@
 using System;
-
+//Only Basic Requirements
 public class Entry {
     public string userDate;
     public string userPrompt;
