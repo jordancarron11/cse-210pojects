@@ -4,30 +4,20 @@ class Program
 {
     static void Main(string[] args)
     {
+         Fraction f1 = new Fraction();
+        Console.WriteLine(f1.GetFractionText());
+        Console.WriteLine(f1.GetDecimalValue());
 
-        Random randomNum = new Random();
-        int machineNumber = randomNum.Next(1, 101);
+        Fraction f2 = new Fraction(5);
+        Console.WriteLine(f2.GetFractionText());
+        Console.WriteLine(f2.GetDecimalValue());
 
-        int userGuess = -1;
+        Fraction f3 = new Fraction(3, 4);
+        Console.WriteLine(f3.GetFractionText());
+        Console.WriteLine(f3.GetDecimalValue());
 
-        while (userGuess != machineNumber)
-        {
-            Console.Write("What is your guess? ");
-            userGuess = int.Parse(Console.ReadLine());
-
-            if (machineNumber > userGuess)
-            {
-                Console.WriteLine("Higher");
-            }
-            else if (machineNumber < userGuess)
-            {
-                Console.WriteLine("Lower");
-            }
-            else
-            {
-                Console.WriteLine("Congratulations! You guessed it!");
-            }
-
-        }                    
+        Fraction f4 = new Fraction(1, 3);
+        Console.WriteLine(f4.GetFractionText());
+        Console.WriteLine(f4.GetDecimalValue());              
     }
 }
