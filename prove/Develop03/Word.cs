@@ -25,10 +25,10 @@ class Memorize
 
         do
         {
-            int rndIndex = new Random().Next(0, _verseSplit.Count());
-            if (_verseSplit[rndIndex].Contains('_') == false)
+            int i = new Random().Next(0, _verseSplit.Count());
+            if (_verseSplit[i].Contains('_') == false)
             {
-                _verseSplit[rndIndex] = new string('_', _verseSplit[rndIndex].Length);
+                _verseSplit[i] = new string('_', _verseSplit[i].Length);
                 wordsRemoved++;
                 _removedWords++;
 

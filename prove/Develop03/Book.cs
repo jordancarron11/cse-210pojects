@@ -1,18 +1,15 @@
 using System;
-
-class Book
+//going to hold my differnt References 
+class Reference
 {
-    private string _book;
-    public Book (string book) 
+    private string _Reference;
+    public Reference (string Reference) 
     {
-        _book = book;
-        // _chapter  = chapter;
-        // _verse = verse;
+        _Reference = Reference;
     }
 
     public string toString()
     {
-        return string.Format("{0}", _book);
-        // _chapter, _verse
+        return string.Format("{0}", _Reference);
     }
 }

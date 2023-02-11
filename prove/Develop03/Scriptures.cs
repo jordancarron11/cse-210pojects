@@ -3,11 +3,11 @@ using System;
 class Scripture
 {
     private string _scriptureText;
-    private Book _book1;
+    private Reference _book;
 
-    public Scripture (Book book1, string scriptureText)
+    public Scripture (Reference book, string scriptureText)
     {
-        _book1 = book1;
+        _book = book;
         _scriptureText = scriptureText;
     }
 
