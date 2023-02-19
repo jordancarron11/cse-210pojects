@@ -38,11 +38,6 @@ private List<string> _activites;
             WorkoutCount();
         }
     }
-
-    private void CooldownCount()
-    {
-        
-    }
     private void WorkoutCount()
     {
         int randomIndex = new Random().Next(0, _activites.Count());
