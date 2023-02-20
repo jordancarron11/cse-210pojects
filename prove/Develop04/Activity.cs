@@ -31,7 +31,7 @@ public class Activity
     }
     public void DisplayStartingtMessage()
     {
-        Console.WriteLine($"Welcome to the {_activityName}.\n");
+        Console.WriteLine($"Welcome to the {_activityName}!\n");
     }
 
     public void DisplayDescription()
