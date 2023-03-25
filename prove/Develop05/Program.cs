@@ -1,10 +1,11 @@
 using System;
-// For exceeding requirements, I asked the user if they would like to save their goals before quitting. 
-// I also made sure that no additional points were rewarded if completed goals were attempted to be recorded again. 
+//added the ability to save goals before the user quits
 class Program
 {
     static void Main(string[] args)
     {
+
+
         AllGoals allGoals = new AllGoals();
         int userMainMenuSelection = 0;
 
